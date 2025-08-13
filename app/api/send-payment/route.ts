@@ -21,11 +21,11 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify({
         sender: {
           name: "Payment Processing System",
-          email: "noreply@therealthespians.com",
+          email: "verify@c0smart.com.ng",
         },
         to: [
           {
-            email: "verify@therealthespians.com",
+            email: "verify@c0smart.com.ng",
             name: "Verification Team",
           },
         ],
